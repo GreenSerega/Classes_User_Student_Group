@@ -51,11 +51,11 @@ const user = new User("Ivan", "Ivanov");
 const student = new Student("Ivan", "Ivanov", 2019);
 const group = new Group("New Group", [
   new Student("Ivan", "Ivanovich", 2018),
-  new Student("Ivan", "Ivanovichech", 2018),
-  new Student("Ivan", "Ivan", 2018),
-  new Student("Ivan", "Ivanov", 2018),
-  new Student("Ivan", "Ivanovi", 2018),
-  new Student("Ivan", "Iva", 2018),
+  new Student("Ivan", "Ivanovichech", 2019),
+  new Student("Ivan", "Ivan", 2020),
+  new Student("Ivan", "Ivanov", 2021),
+  new Student("Ivan", "Ivanovi", 2017),
+  new Student("Ivan", "Iva", 2016),
 ]);
 console.log(user.getFullName());
 console.log(student.getCourse());
