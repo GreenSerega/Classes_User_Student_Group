@@ -1,13 +1,19 @@
 "use strict";
 
 class User {
-  constructor(name, surname, year) {
+  constructor(name, surname ) {
     this.name = name;
     this.surname = surname;
-    this.year = year;
   }
   getFullname() {
     return `${this.name} ${this.surname}`;
+  }
+}
+
+class Student extends User {
+  constructor(name, surname, year) {
+    super(name, surname, year);
+    this.year = year;
   }
   get year() {
     return this._year;
@@ -20,12 +26,6 @@ class User {
       throw new RangeError("Year value must not exceed 5 years.");
     }
     this._year = year;
-  }
-}
-
-class Student extends User {
-  constructor(name, surname, year) {
-    super(name, surname, year);
   }
   getCourse() {
     return new Date().getFullYear() - this.year;
